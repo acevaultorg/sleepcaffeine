@@ -18,6 +18,14 @@
 <link rel="canonical" href="https://sleepcaffeine.com/coffee-timing-calculator/">
 <!-- Plausible Analytics -->
 <script defer data-domain="sleepcaffeine.com" src="https://plausible.io/js/script.js"></script>
+<script>
+window.addEventListener('error', function(e) {
+  if (window.plausible) plausible('JS Error', {props: {message: e.message, source: e.filename}});
+});
+window.addEventListener('unhandledrejection', function(e) {
+  if (window.plausible) plausible('JS Error', {props: {message: e.reason?.message || 'Promise rejected'}});
+});
+</script>
 <!-- Google AdSense — replace ca-pub-XXXXXXXXXXXXXXXX with publisher ID from paulomdevries@gmail.com AdSense account -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 <script type="application/ld+json">

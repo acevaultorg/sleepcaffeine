@@ -9,6 +9,14 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <!-- Plausible Analytics -->
 <script defer data-domain="sleepcaffeine.com" src="https://plausible.io/js/script.js"></script>
+<script>
+window.addEventListener('error', function(e) {
+  if (window.plausible) plausible('JS Error', {props: {message: e.message, source: e.filename}});
+});
+window.addEventListener('unhandledrejection', function(e) {
+  if (window.plausible) plausible('JS Error', {props: {message: e.reason?.message || 'Promise rejected'}});
+});
+</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
