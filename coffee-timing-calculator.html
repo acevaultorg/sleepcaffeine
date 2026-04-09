@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimal Coffee Timing Calculator — When to Drink Coffee | Sleep Caffeine</title>
+<meta name="description" content="Find the best time to drink coffee based on your cortisol rhythm and wake-up time. Science-backed calculator shows optimal caffeine windows and cutoff times.">
+<meta property="og:title" content="Optimal Coffee Timing Calculator — When to Drink Coffee">
+<meta property="og:description" content="Find the best time to drink coffee based on your cortisol rhythm and wake-up time.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sleepcaffeine.com/coffee-timing-calculator/">
+<meta property="og:site_name" content="Sleep Caffeine">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Optimal Coffee Timing Calculator — When to Drink Coffee">
+<meta name="twitter:description" content="Find the best time to drink coffee based on your cortisol rhythm and wake-up time.">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://sleepcaffeine.com/coffee-timing-calculator/">
+<!-- Plausible Analytics -->
+<script defer data-domain="sleepcaffeine.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google AdSense — replace ca-pub-XXXXXXXXXXXXXXXX with publisher ID from paulomdevries@gmail.com AdSense account -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Optimal Coffee Timing Calculator","description":"Find the best time to drink coffee based on your cortisol rhythm and wake-up time. Science-backed calculator shows optimal caffeine windows and cutoff times.","url":"https://sleepcaffeine.com/coffee-timing-calculator/","applicationCategory":"HealthApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Organization","name":"Sleep Caffeine","url":"https://sleepcaffeine.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best time to drink coffee?","acceptedAnswer":{"@type":"Answer","text":"The best time to drink coffee is 1.5 to 2 hours after waking — typically between 9:30 and 11:30 AM for someone who wakes at 7 AM. This is when your cortisol levels naturally dip after the morning peak, so caffeine has the greatest effect. A second optimal window falls around 1:00 to 2:00 PM, between the midday and late-afternoon cortisol surges. Timing coffee for these cortisol valleys means you need less caffeine for the same alertness boost, reducing tolerance buildup and jitters."}},{"@type":"Question","name":"Why shouldn't I drink coffee first thing in the morning?","acceptedAnswer":{"@type":"Answer","text":"When you first wake up, your body produces a cortisol spike known as the cortisol awakening response (CAR). This natural surge peaks about 30-45 minutes after waking and is your body's built-in alarm system. Drinking coffee during this peak is counterproductive for two reasons: first, caffeine's alertness effect is redundant when cortisol is already high, so you're essentially wasting it. Second, regularly flooding your system with both cortisol and caffeine simultaneously can increase caffeine tolerance over time, meaning you'll need more coffee to feel the same effect. Wait at least 90 minutes after waking for your first cup."}},{"@type":"Question","name":"How does cortisol affect caffeine?","acceptedAnswer":{"@type":"Answer","text":"Cortisol and caffeine both increase alertness, but through different mechanisms. Cortisol is produced by your adrenal glands following a circadian rhythm — it peaks shortly after waking (~8-9 AM), again around noon, and once more around 5:30-6:30 PM for a typical schedule. Caffeine blocks adenosine receptors, preventing the drowsiness signal. When you consume caffeine during a cortisol peak, the combined stimulation provides diminishing returns and can increase anxiety and jitters. When you time caffeine for cortisol dips, it fills the alertness gap your body naturally creates, giving you smoother, more effective energy without the crash."}},{"@type":"Question","name":"When should I stop drinking coffee?","acceptedAnswer":{"@type":"Answer","text":"You should stop drinking coffee 8 to 10 hours before your intended bedtime. If you go to bed at 10 PM, your caffeine cutoff should be between 12 PM and 2 PM. Caffeine has a half-life of approximately 5 hours, meaning half of it is still in your system 5 hours later. Even if you can \"fall asleep after coffee,\" research shows that late caffeine consumption reduces deep sleep (slow-wave sleep) by up to 20%, leaving you less restored even after a full night. People who metabolize caffeine slowly (about 50% of the population due to CYP1A2 gene variants) may need to stop even earlier — up to 12 hours before bed."}},{"@type":"Question","name":"Can I drink coffee before a workout?","acceptedAnswer":{"@type":"Answer","text":"Yes — caffeine is one of the most well-researched ergogenic aids (performance enhancers) available. For optimal workout performance, consume coffee 30 to 60 minutes before exercise. Research shows caffeine can improve endurance by 2-4%, increase strength output, reduce perceived effort, and enhance focus during training. The ideal dose is 3-6 mg per kilogram of body weight (roughly 200-400mg for most adults, or 1-2 cups of coffee). However, try to align your pre-workout coffee with your cortisol dips when possible — a mid-morning workout with coffee at 9:30 AM is ideal. Avoid pre-workout caffeine after your cutoff time if your workout is in the evening."}},{"@type":"Question","name":"How many cups of coffee per day is safe?","acceptedAnswer":{"@type":"Answer","text":"According to the FDA and major health organizations, up to 400mg of caffeine per day is generally safe for healthy adults — that's roughly 4 standard 8oz cups of brewed coffee. However, \"safe\" and \"optimal\" are different. For best results, most people benefit from 2-3 cups strategically timed during cortisol dips. Consuming more can lead to diminishing returns, increased anxiety, disrupted sleep, and higher tolerance. Pregnant individuals should limit intake to 200mg per day. People with heart conditions, anxiety disorders, or caffeine sensitivity may need to consume less. Pay attention to total caffeine from all sources including tea, chocolate, energy drinks, and pre-workout supplements."}}]}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0e1a;
+  --card:#121829;
+  --card-border:#1e2a45;
+  --primary:#6c5ce7;
+  --primary-light:#a29bfe;
+  --accent:#00cec9;
+  --accent-dim:rgba(0,206,201,.15);
+  --warning:#fdcb6e;
+  --danger:#e17055;
+  --text:#e8e8f0;
+  --text-dim:#8a8aa0;
+  --text-muted:#555570;
+  --green:#00b894;
+  --green-dim:rgba(0,184,148,.12);
+  --radius:16px;
+  --shadow:0 8px 32px rgba(0,0,0,.3);
+}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);color:var(--text);
+  min-height:100vh;line-height:1.6;
+  overflow-x:hidden;
+}
+
+/* Hero */
+.hero{
+  text-align:center;padding:60px 20px 40px;
+  background:linear-gradient(180deg,#0f1528 0%,var(--bg) 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
+  background:radial-gradient(ellipse at 50% 0%,rgba(108,92,231,.08) 0%,transparent 60%);
+  pointer-events:none;
+}
+.hero h1{
+  font-size:clamp(1.8rem,5vw,3rem);font-weight:800;
+  background:linear-gradient(135deg,#fff 0%,var(--primary-light) 50%,var(--accent) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;margin-bottom:12px;letter-spacing:-.02em;
+}
+.hero p{font-size:clamp(.95rem,2.5vw,1.15rem);color:var(--text-dim);max-width:620px;margin:0 auto;}
+
+.container{max-width:900px;margin:0 auto;padding:0 20px 80px;}
+
+/* Input Card */
+.input-card{
+  background:var(--card);border:1px solid var(--card-border);
+  border-radius:var(--radius);padding:36px;margin-bottom:32px;
+  box-shadow:var(--shadow);
+}
+.input-card h2{font-size:1.1rem;color:var(--text-dim);font-weight:500;margin-bottom:24px;}
+.time-input-wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.time-input-group{display:flex;align-items:center;gap:8px;}
+.time-input{
+  width:80px;padding:16px 12px;text-align:center;
+  font-size:1.8rem;font-weight:700;
+  background:#0d1220;border:2px solid var(--card-border);
+  border-radius:12px;color:var(--text);
+  transition:border-color .2s;
+  -moz-appearance:textfield;
+}
+.time-input::-webkit-outer-spin-button,
+.time-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+.time-input:focus{outline:none;border-color:var(--primary);}
+.time-sep{font-size:2rem;font-weight:700;color:var(--text-muted);}
+.ampm-toggle{display:flex;flex-direction:column;gap:4px;}
+.ampm-btn{
+  padding:8px 14px;border:2px solid var(--card-border);border-radius:8px;
+  background:transparent;color:var(--text-dim);font-weight:600;font-size:.85rem;
+  cursor:pointer;transition:all .2s;
+}
+.ampm-btn.active{
+  border-color:var(--primary);color:var(--primary-light);
+  background:rgba(108,92,231,.1);
+}
+.calculate-btn{
+  padding:16px 40px;border:none;border-radius:12px;
+  font-size:1.05rem;font-weight:700;cursor:pointer;
+  background:linear-gradient(135deg,var(--primary),#8b7cf7);color:#fff;
+  box-shadow:0 4px 20px rgba(108,92,231,.4);
+  transition:all .25s ease;margin-left:auto;
+}
+.calculate-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 25px rgba(108,92,231,.5);
+}
+.now-btn{
+  padding:10px 18px;border:1px solid var(--card-border);border-radius:10px;
+  background:transparent;color:var(--accent);font-weight:600;font-size:.9rem;
+  cursor:pointer;transition:all .2s;
+}
+.now-btn:hover{background:var(--accent-dim);border-color:var(--accent);}
+
+/* Time Format Toggle */
+.format-toggle{
+  display:flex;gap:2px;background:#0d1220;border:1px solid var(--card-border);
+  border-radius:8px;padding:2px;margin-left:8px;
+}
+.format-btn{
+  padding:6px 10px;border:none;border-radius:6px;
+  background:transparent;color:var(--text-muted);font-weight:600;font-size:.75rem;
+  cursor:pointer;transition:all .2s;letter-spacing:.03em;
+}
+.format-btn.active{
+  background:rgba(108,92,231,.15);color:var(--primary-light);
+}
+
+/* Bedtime Section */
+.bedtime-section{
+  background:var(--card);border:1px solid var(--card-border);
+  border-radius:var(--radius);padding:28px 36px;margin-bottom:32px;
+  box-shadow:var(--shadow);
+}
+.bedtime-header{
+  display:flex;align-items:center;justify-content:space-between;cursor:pointer;
+}
+.bedtime-header h3{
+  font-size:1rem;color:var(--accent);font-weight:600;
+  display:flex;align-items:center;gap:8px;
+}
+.bedtime-toggle{
+  width:48px;height:26px;border-radius:13px;
+  background:var(--card-border);border:none;cursor:pointer;
+  position:relative;transition:background .3s;
+}
+.bedtime-toggle.active{background:var(--accent);}
+.bedtime-toggle::after{
+  content:'';position:absolute;top:3px;left:3px;
+  width:20px;height:20px;border-radius:50%;
+  background:#fff;transition:transform .3s;
+}
+.bedtime-toggle.active::after{transform:translateX(22px);}
+.bedtime-body{
+  max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;
+}
+.bedtime-body.open{max-height:200px;padding-top:20px;}
+.bedtime-inputs{display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
+.bedtime-label{font-size:.9rem;color:var(--text-dim);}
+.bedtime-time-group{display:flex;align-items:center;gap:6px;}
+.bedtime-time{
+  width:60px;padding:10px 8px;text-align:center;
+  font-size:1.2rem;font-weight:600;
+  background:#0d1220;border:2px solid var(--card-border);
+  border-radius:8px;color:var(--text);
+  -moz-appearance:textfield;
+}
+.bedtime-time::-webkit-outer-spin-button,
+.bedtime-time::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+.bedtime-time:focus{outline:none;border-color:var(--accent);}
+.bedtime-ampm{
+  padding:6px 10px;border:2px solid var(--card-border);border-radius:6px;
+  background:transparent;color:var(--text-dim);font-weight:600;font-size:.8rem;
+  cursor:pointer;transition:all .2s;
+}
+.bedtime-ampm.active{border-color:var(--accent);color:var(--accent);background:rgba(0,206,201,.08);}
+
+/* Results */
+.results{display:none;animation:fadeUp .5s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.results-header{text-align:center;margin-bottom:28px;}
+.results-header h2{font-size:1.3rem;font-weight:700;color:var(--text);margin-bottom:4px;}
+.results-header p{color:var(--text-dim);font-size:.9rem;}
+
+/* Timeline */
+.timeline-section{
+  background:var(--card);border:1px solid var(--card-border);
+  border-radius:var(--radius);padding:28px;margin-bottom:28px;
+  box-shadow:var(--shadow);
+}
+.timeline-section h3{font-size:1rem;font-weight:600;margin-bottom:16px;color:var(--text);}
+.timeline-canvas-wrap{
+  position:relative;width:100%;height:260px;
+  background:#0d1220;border-radius:12px;overflow:hidden;
+}
+canvas#cortisolTimeline{width:100%;height:100%;}
+
+/* Window Cards */
+.window-cards{display:grid;gap:16px;margin-bottom:28px;}
+.window-card{
+  background:var(--card);border:2px solid var(--card-border);
+  border-radius:var(--radius);padding:24px 28px;
+  display:flex;align-items:center;gap:20px;
+  transition:all .3s ease;position:relative;overflow:hidden;
+}
+.window-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  border-radius:2px;
+}
+.window-card.green{border-color:var(--green);box-shadow:0 0 30px rgba(0,184,148,.08);}
+.window-card.green::before{background:var(--green);}
+.window-card.accent{border-color:var(--accent);box-shadow:0 0 20px rgba(0,206,201,.06);}
+.window-card.accent::before{background:var(--accent);}
+.window-card.warning{border-color:var(--warning);box-shadow:0 0 20px rgba(253,203,110,.06);}
+.window-card.warning::before{background:var(--warning);}
+.window-card.danger{border-color:var(--danger);box-shadow:0 0 20px rgba(225,112,85,.06);}
+.window-card.danger::before{background:var(--danger);}
+
+.window-icon{
+  font-size:2rem;min-width:50px;text-align:center;
+}
+.window-time{text-align:center;min-width:120px;}
+.window-time .time{font-size:1.5rem;font-weight:800;line-height:1.2;}
+.window-card.green .time{color:var(--green);}
+.window-card.accent .time{color:var(--accent);}
+.window-card.warning .time{color:var(--warning);}
+.window-card.danger .time{color:var(--danger);}
+.window-time .period-label{font-size:.8rem;font-weight:600;color:var(--text-dim);}
+.window-info{flex:1;}
+.window-title{font-size:.95rem;font-weight:600;color:var(--text);margin-bottom:2px;}
+.window-desc{font-size:.85rem;color:var(--text-dim);line-height:1.5;}
+.window-badge{
+  display:inline-block;padding:4px 10px;border-radius:6px;
+  font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  margin-top:6px;
+}
+.window-card.green .window-badge{background:var(--green-dim);color:var(--green);}
+.window-card.accent .window-badge{background:rgba(0,206,201,.12);color:var(--accent);}
+.window-card.warning .window-badge{background:rgba(253,203,110,.1);color:var(--warning);}
+.window-card.danger .window-badge{background:rgba(225,112,85,.1);color:var(--danger);}
+
+/* Info Section */
+.info-section{margin-top:48px;}
+.info-section h2{font-size:1.3rem;font-weight:700;margin-bottom:20px;color:var(--text);}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+.info-card{
+  background:var(--card);border:1px solid var(--card-border);
+  border-radius:12px;padding:24px;
+}
+.info-card h3{font-size:.95rem;font-weight:700;margin-bottom:8px;color:var(--primary-light);}
+.info-card p{font-size:.88rem;color:var(--text-dim);line-height:1.6;}
+
+/* FAQ / SEO Content */
+.seo-content{margin-top:60px;}
+.seo-content h2{font-size:1.4rem;font-weight:700;margin-bottom:24px;text-align:center;}
+.faq-item{
+  background:var(--card);border:1px solid var(--card-border);
+  border-radius:12px;margin-bottom:12px;overflow:hidden;
+}
+.faq-q{
+  padding:18px 24px;cursor:pointer;font-weight:600;font-size:.95rem;
+  display:flex;justify-content:space-between;align-items:center;
+  transition:background .2s;
+}
+.faq-q:hover{background:rgba(255,255,255,.02);}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--text-muted);transition:transform .3s;}
+.faq-item.open .faq-q::after{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+.faq-a-inner{padding:0 24px 18px;color:var(--text-dim);font-size:.9rem;line-height:1.7;}
+
+/* Related Tools */
+.related-tools{
+  margin-top:60px;padding:0 0 20px;
+}
+.related-tools h2{
+  font-size:1.3rem;font-weight:700;margin-bottom:20px;text-align:center;color:var(--text);
+}
+.related-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
+}
+.related-card{
+  background:var(--card);border:1px solid var(--card-border);border-radius:12px;
+  padding:24px;text-decoration:none;color:var(--text);
+  transition:all .25s ease;display:flex;flex-direction:column;gap:8px;
+}
+.related-card:hover{
+  border-color:var(--primary);transform:translateY(-3px);
+  box-shadow:0 8px 24px rgba(108,92,231,.15);
+}
+.related-icon{font-size:1.6rem;}
+.related-title{font-size:.95rem;font-weight:700;color:var(--primary-light);}
+.related-desc{font-size:.85rem;color:var(--text-dim);line-height:1.5;}
+
+.footer{
+  text-align:center;padding:40px 20px;color:var(--text-muted);font-size:.85rem;
+  border-top:1px solid var(--card-border);margin-top:60px;
+}
+.footer a{color:var(--primary-light);text-decoration:none;}
+
+/* Responsive */
+@media(max-width:600px){
+  .input-card{padding:24px 20px;}
+  .bedtime-section{padding:20px;}
+  .time-input-wrap{justify-content:center;}
+  .calculate-btn{width:100%;margin:16px 0 0;}
+  .window-card{flex-direction:column;text-align:center;padding:20px;}
+  .window-time{min-width:auto;}
+  .window-icon{min-width:auto;}
+  .bedtime-inputs{flex-direction:column;align-items:flex-start;}
+  .timeline-canvas-wrap{height:220px;}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Optimal Coffee Timing Calculator</h1>
+  <p>Find the best times to drink coffee based on your wake-up time and natural cortisol rhythm. Maximize caffeine effectiveness, avoid crashes.</p>
+</div>
+
+<div class="container">
+  <!-- Wake-up Time Input -->
+  <div class="input-card">
+    <h2>What time do you wake up?</h2>
+    <div class="time-input-wrap">
+      <div class="time-input-group">
+        <input type="number" class="time-input" id="inputHour" min="1" max="12" value="7" aria-label="Hour">
+        <span class="time-sep">:</span>
+        <input type="number" class="time-input" id="inputMin" min="0" max="59" value="00" aria-label="Minutes">
+        <div class="ampm-toggle">
+          <button class="ampm-btn active" id="amBtn" onclick="setAmPm('am')">AM</button>
+          <button class="ampm-btn" id="pmBtn" onclick="setAmPm('pm')">PM</button>
+        </div>
+      </div>
+      <button class="now-btn" onclick="setNow()">Now</button>
+      <div class="format-toggle" title="Time format">
+        <button class="format-btn active" id="fmt12Btn" onclick="setTimeFormat('12h')">12h</button>
+        <button class="format-btn" id="fmt24Btn" onclick="setTimeFormat('24h')">24h</button>
+      </div>
+      <button class="calculate-btn" onclick="calculate()">Find Best Times</button>
+    </div>
+  </div>
+
+  <!-- Bedtime Section -->
+  <div class="bedtime-section">
+    <div class="bedtime-header" onclick="toggleBedtime()">
+      <h3>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        Set Bedtime for Caffeine Cutoff
+      </h3>
+      <button class="bedtime-toggle" id="bedtimeToggle" aria-label="Toggle bedtime input"></button>
+    </div>
+    <div class="bedtime-body" id="bedtimeBody">
+      <div class="bedtime-inputs">
+        <span class="bedtime-label">I usually go to bed at</span>
+        <div class="bedtime-time-group">
+          <input type="number" class="bedtime-time" id="bedHour" min="1" max="12" value="10">
+          <span class="time-sep" style="font-size:1.2rem">:</span>
+          <input type="number" class="bedtime-time" id="bedMin" min="0" max="59" value="30">
+          <div style="display:flex;gap:3px">
+            <button class="bedtime-ampm" id="bedAmBtn" onclick="setBedAmPm('am')">AM</button>
+            <button class="bedtime-ampm active" id="bedPmBtn" onclick="setBedAmPm('pm')">PM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div class="results" id="results">
+    <div class="results-header">
+      <h2 id="resultsTitle">Your Optimal Coffee Windows</h2>
+      <p id="resultsSubtitle">Based on your cortisol rhythm and wake-up time</p>
+    </div>
+
+    <!-- Timeline Canvas -->
+    <div class="timeline-section">
+      <h3>Your Day: Cortisol Rhythm &amp; Coffee Windows</h3>
+      <div class="timeline-canvas-wrap">
+        <canvas id="cortisolTimeline"></canvas>
+      </div>
+    </div>
+
+    <!-- Window Cards -->
+    <div class="window-cards" id="windowCards"></div>
+  </div>
+
+  <!-- Info Cards -->
+  <div class="info-section">
+    <h2>Why Coffee Timing Matters</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Cortisol &amp; Caffeine</h3>
+        <p>Cortisol is your body's natural alertness hormone. It peaks shortly after waking, around midday, and in the late afternoon. Drinking coffee during these peaks wastes caffeine — your body is already alert. Timing coffee for cortisol dips maximizes its effect.</p>
+      </div>
+      <div class="info-card">
+        <h3>The Morning Mistake</h3>
+        <p>Drinking coffee immediately upon waking interferes with peak cortisol production. Your body learns to rely on caffeine instead of its natural wake-up system, leading to tolerance and dependence. Wait 90-120 minutes after waking for your first cup.</p>
+      </div>
+      <div class="info-card">
+        <h3>Caffeine Half-Life</h3>
+        <p>Caffeine has a half-life of approximately 5 hours. A coffee at 3 PM means roughly 50% of that caffeine is still in your system at 8 PM. Stop caffeine 8-10 hours before bed to protect sleep quality and deep sleep stages.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ / SEO Content -->
+  <div class="seo-content">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is the best time to drink coffee?</div>
+      <div class="faq-a"><div class="faq-a-inner">The best time to drink coffee is <strong>1.5 to 2 hours after waking</strong> — typically between 9:30 and 11:30 AM for someone who wakes at 7 AM. This is when your cortisol levels naturally dip after the morning peak, so caffeine has the greatest effect. A second optimal window falls around <strong>1:00 to 2:00 PM</strong>, between the midday and late-afternoon cortisol surges. Timing coffee for these cortisol valleys means you need less caffeine for the same alertness boost, reducing tolerance buildup and jitters.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Why shouldn't I drink coffee first thing in the morning?</div>
+      <div class="faq-a"><div class="faq-a-inner">When you first wake up, your body produces a <strong>cortisol spike</strong> known as the cortisol awakening response (CAR). This natural surge peaks about 30-45 minutes after waking and is your body's built-in alarm system. Drinking coffee during this peak is counterproductive for two reasons: first, caffeine's alertness effect is redundant when cortisol is already high, so you're essentially wasting it. Second, regularly flooding your system with both cortisol and caffeine simultaneously can increase caffeine tolerance over time, meaning you'll need more coffee to feel the same effect. Wait at least 90 minutes after waking for your first cup.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How does cortisol affect caffeine?</div>
+      <div class="faq-a"><div class="faq-a-inner">Cortisol and caffeine both increase alertness, but through different mechanisms. <strong>Cortisol</strong> is produced by your adrenal glands following a circadian rhythm — it peaks shortly after waking (~8-9 AM), again around noon, and once more around 5:30-6:30 PM for a typical schedule. <strong>Caffeine</strong> blocks adenosine receptors, preventing the drowsiness signal. When you consume caffeine during a cortisol peak, the combined stimulation provides diminishing returns and can increase anxiety and jitters. When you time caffeine for cortisol dips, it fills the alertness gap your body naturally creates, giving you smoother, more effective energy without the crash.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">When should I stop drinking coffee?</div>
+      <div class="faq-a"><div class="faq-a-inner">You should stop drinking coffee <strong>8 to 10 hours before your intended bedtime</strong>. If you go to bed at 10 PM, your caffeine cutoff should be between 12 PM and 2 PM. Caffeine has a half-life of approximately 5 hours, meaning half of it is still in your system 5 hours later. Even if you can "fall asleep after coffee," research shows that late caffeine consumption reduces deep sleep (slow-wave sleep) by up to 20%, leaving you less restored even after a full night. People who metabolize caffeine slowly (about 50% of the population due to CYP1A2 gene variants) may need to stop even earlier — up to 12 hours before bed.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I drink coffee before a workout?</div>
+      <div class="faq-a"><div class="faq-a-inner">Yes — caffeine is one of the most well-researched <strong>ergogenic aids</strong> (performance enhancers) available. For optimal workout performance, consume coffee <strong>30 to 60 minutes before exercise</strong>. Research shows caffeine can improve endurance by 2-4%, increase strength output, reduce perceived effort, and enhance focus during training. The ideal dose is 3-6 mg per kilogram of body weight (roughly 200-400mg for most adults, or 1-2 cups of coffee). However, try to align your pre-workout coffee with your cortisol dips when possible — a mid-morning workout with coffee at 9:30 AM is ideal. Avoid pre-workout caffeine after your cutoff time if your workout is in the evening.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How many cups of coffee per day is safe?</div>
+      <div class="faq-a"><div class="faq-a-inner">According to the FDA and major health organizations, <strong>up to 400mg of caffeine per day</strong> is generally safe for healthy adults — that's roughly 4 standard 8oz cups of brewed coffee. However, "safe" and "optimal" are different. For best results, most people benefit from <strong>2-3 cups</strong> strategically timed during cortisol dips. Consuming more can lead to diminishing returns, increased anxiety, disrupted sleep, and higher tolerance. Pregnant individuals should limit intake to 200mg per day. People with heart conditions, anxiety disorders, or caffeine sensitivity may need to consume less. Pay attention to total caffeine from all sources including tea, chocolate, energy drinks, and pre-workout supplements.</div></div>
+    </div>
+  </div>
+</div>
+
+<style>
+.affiliate-section{max-width:1000px;margin:0 auto 40px;padding:0 20px;}
+.affiliate-section h2{font-size:1.3rem;font-weight:700;margin-bottom:6px;text-align:center;}
+.affiliate-subtext{text-align:center;color:var(--text-dim);font-size:.87rem;margin-bottom:20px;}
+.affiliate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+.affiliate-card{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:20px;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:8px;transition:border-color .2s,transform .2s;}
+.affiliate-card:hover{border-color:var(--primary);transform:translateY(-2px);}
+.affiliate-emoji{font-size:1.8rem;}
+.affiliate-name{font-size:.95rem;font-weight:700;color:var(--primary-light);}
+.affiliate-desc{font-size:.82rem;color:var(--text-dim);line-height:1.5;flex:1;}
+.affiliate-cta{font-size:.82rem;font-weight:700;color:var(--accent);margin-top:4px;}
+.affiliate-disclosure{text-align:center;font-size:.72rem;color:var(--text-muted);margin-top:14px;}
+</style>
+
+<!-- Amazon Associates — coffee gear matched to coffee timing optimizer users -->
+<div class="affiliate-section">
+  <h2>Gear for better coffee</h2>
+  <p class="affiliate-subtext">Tools that help you brew consistently and hit your optimal windows every morning.</p>
+  <div class="affiliate-grid">
+    <a href="https://www.amazon.com/s?k=pour+over+coffee+set+hario&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">🫗</span>
+      <span class="affiliate-name">Pour-Over Set</span>
+      <span class="affiliate-desc">Brew precisely — control dose and strength to match your cortisol window without overdoing it.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+    <a href="https://www.amazon.com/s?k=manual+burr+coffee+grinder&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">⚙️</span>
+      <span class="affiliate-name">Manual Burr Grinder</span>
+      <span class="affiliate-desc">Consistent grind = consistent caffeine per cup. Cheap blade grinders give wildly variable extraction.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+    <a href="https://www.amazon.com/s?k=espresso+machine+home&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">☕</span>
+      <span class="affiliate-name">Espresso Machine</span>
+      <span class="affiliate-desc">A single shot is ~65mg caffeine — easier to dose precisely than a full drip pot.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">As an Amazon Associate we earn from qualifying purchases. Prices and availability subject to change.</p>
+</div>
+
+<div class="related-tools">
+  <h2>More Sleep & Caffeine Tools</h2>
+  <div class="related-grid">
+    <a href="/sleep-calculator/" target="_top" class="related-card">
+      <span class="related-icon">&#128164;</span>
+      <span class="related-title">Sleep Cycle Calculator</span>
+      <span class="related-desc">Find your perfect bedtime based on 90-minute sleep cycles</span>
+    </a>
+    <a href="/nap-calculator/" target="_top" class="related-card">
+      <span class="related-icon">&#128564;</span>
+      <span class="related-title">Nap Calculator</span>
+      <span class="related-desc">Find your perfect nap length — power naps, NASA naps & more</span>
+    </a>
+    <a href="/caffeine-half-life-calculator/" target="_top" class="related-card">
+      <span class="related-icon">&#9889;</span>
+      <span class="related-title">Caffeine Half-Life Calculator</span>
+      <span class="related-desc">Track how caffeine decays in your body hour by hour</span>
+    </a>
+  </div>
+</div>
+
+<style>
+.feedback-bar{max-width:900px;margin:0 auto 40px;padding:0 20px;text-align:center;}
+.feedback-bar-inner{display:inline-flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--card-border);border-radius:999px;padding:12px 24px;font-size:.88rem;color:var(--text-dim);}
+.feedback-btn{background:none;border:1px solid var(--card-border);border-radius:999px;padding:6px 16px;font-size:.88rem;cursor:pointer;color:var(--text);transition:all .2s;line-height:1;}
+.feedback-btn:hover{border-color:var(--primary);color:var(--primary-light);}
+.feedback-btn.voted{border-color:var(--green);color:var(--green);pointer-events:none;}
+.feedback-thanks{display:none;color:var(--green);font-size:.88rem;font-weight:600;margin-top:10px;}
+</style>
+
+<div class="feedback-bar">
+  <div class="feedback-bar-inner" id="feedbackBar">
+    <span>Was this calculator helpful?</span>
+    <button class="feedback-btn" onclick="sendFeedback('yes',this)" aria-label="Yes, helpful">&#128077; Yes</button>
+    <button class="feedback-btn" onclick="sendFeedback('no',this)" aria-label="No, not helpful">&#128078; No — what's missing? <a href="mailto:hello@sleepcaffeine.com" style="color:var(--accent);font-size:.8rem;margin-left:4px">Tell us</a></button>
+  </div>
+  <p class="feedback-thanks" id="feedbackThanks">Thanks for your feedback!</p>
+</div>
+
+<div class="footer">
+  <p>Optimal Coffee Timing Calculator by <a href="/">Sleep Caffeine</a> &mdash; Science-backed tools for better sleep</p>
+  <p style="margin-top:8px">Cortisol rhythm data based on research from the Journal of Clinical Endocrinology & Metabolism and peer-reviewed chronobiology studies.</p>
+</div>
+
+<script>
+// State
+let ampm = 'am';
+let bedAmPm = 'pm';
+let bedtimeEnabled = false;
+let timeFormat = localStorage.getItem('sc_timeFormat') || '12h';
+
+// Time format toggle (12h/24h)
+function setTimeFormat(fmt) {
+  const hourInput = document.getElementById('inputHour');
+  const bedHourInput = document.getElementById('bedHour');
+  const oldFmt = timeFormat;
+  timeFormat = fmt;
+  localStorage.setItem('sc_timeFormat', fmt);
+  document.getElementById('fmt12Btn').classList.toggle('active', fmt === '12h');
+  document.getElementById('fmt24Btn').classList.toggle('active', fmt === '24h');
+  if (oldFmt !== fmt) {
+    // Main input
+    let h = parseInt(hourInput.value) || 7;
+    if (oldFmt === '12h' && fmt === '24h') {
+      if (ampm === 'pm' && h !== 12) h += 12;
+      if (ampm === 'am' && h === 12) h = 0;
+      hourInput.value = h; hourInput.min = 0; hourInput.max = 23;
+    } else {
+      const ap = h >= 12 ? 'pm' : 'am';
+      h = h % 12 || 12;
+      hourInput.value = h; hourInput.min = 1; hourInput.max = 12;
+      setAmPm(ap);
+    }
+    // Bedtime input
+    let bh = parseInt(bedHourInput.value) || 10;
+    if (oldFmt === '12h' && fmt === '24h') {
+      if (bedAmPm === 'pm' && bh !== 12) bh += 12;
+      if (bedAmPm === 'am' && bh === 12) bh = 0;
+      bedHourInput.value = bh; bedHourInput.min = 0; bedHourInput.max = 23;
+    } else {
+      const bap = bh >= 12 ? 'pm' : 'am';
+      bh = bh % 12 || 12;
+      bedHourInput.value = bh; bedHourInput.min = 1; bedHourInput.max = 12;
+      setBedAmPm(bap);
+    }
+  }
+  document.querySelectorAll('.ampm-toggle').forEach(el => el.style.display = fmt === '24h' ? 'none' : 'flex');
+  document.querySelectorAll('.bedtime-ampm').forEach(el => el.style.display = fmt === '24h' ? 'none' : 'inline-block');
+}
+
+// AM/PM toggles
+function setAmPm(v) {
+  ampm = v;
+  document.getElementById('amBtn').classList.toggle('active', v === 'am');
+  document.getElementById('pmBtn').classList.toggle('active', v === 'pm');
+}
+function setBedAmPm(v) {
+  bedAmPm = v;
+  document.getElementById('bedAmBtn').classList.toggle('active', v === 'am');
+  document.getElementById('bedPmBtn').classList.toggle('active', v === 'pm');
+}
+
+// Set Now
+function setNow() {
+  const now = new Date();
+  let h = now.getHours();
+  const m = now.getMinutes();
+  if (timeFormat === '24h') {
+    document.getElementById('inputHour').value = h;
+  } else {
+    const ap = h >= 12 ? 'pm' : 'am';
+    h = h % 12 || 12;
+    document.getElementById('inputHour').value = h;
+    setAmPm(ap);
+  }
+  document.getElementById('inputMin').value = String(m).padStart(2, '0');
+}
+
+// Bedtime toggle
+function toggleBedtime() {
+  bedtimeEnabled = !bedtimeEnabled;
+  document.getElementById('bedtimeToggle').classList.toggle('active', bedtimeEnabled);
+  document.getElementById('bedtimeBody').classList.toggle('open', bedtimeEnabled);
+}
+
+// FAQ toggle
+function toggleFaq(el) {
+  el.parentElement.classList.toggle('open');
+  const a = el.nextElementSibling;
+  if (el.parentElement.classList.contains('open')) {
+    a.style.maxHeight = a.scrollHeight + 'px';
+  } else {
+    a.style.maxHeight = '0';
+  }
+}
+
+// Format time from total minutes (0-1439)
+function formatTimeFromMin(totalMin) {
+  totalMin = ((totalMin % 1440) + 1440) % 1440;
+  let h = Math.floor(totalMin / 60);
+  const m = Math.floor(totalMin % 60);
+  if (timeFormat === '24h') {
+    const t = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0');
+    return { time: t, ampm: '', display: t };
+  }
+  const ap = h >= 12 ? 'PM' : 'AM';
+  h = h % 12 || 12;
+  return { time: h + ':' + String(m).padStart(2, '0'), ampm: ap, display: h + ':' + String(m).padStart(2, '0') + ' ' + ap };
+}
+
+// Get wake time in minutes from midnight (24h)
+function getWakeMin() {
+  let h = parseInt(document.getElementById('inputHour').value) || 7;
+  const m = parseInt(document.getElementById('inputMin').value) || 0;
+  if (timeFormat === '12h') {
+    if (ampm === 'pm' && h !== 12) h += 12;
+    if (ampm === 'am' && h === 12) h = 0;
+  }
+  return h * 60 + m;
+}
+
+// Get bedtime in minutes from midnight
+function getBedMin() {
+  let h = parseInt(document.getElementById('bedHour').value) || 10;
+  const m = parseInt(document.getElementById('bedMin').value) || 0;
+  if (timeFormat === '12h') {
+    if (bedAmPm === 'pm' && h !== 12) h += 12;
+    if (bedAmPm === 'am' && h === 12) h = 0;
+  }
+  return h * 60 + m;
+}
+
+// Cortisol level function (relative to wake time)
+// Returns value 0-1 representing cortisol level
+function cortisolLevel(minutesSinceWake) {
+  // Cortisol peaks:
+  // Peak 1: ~30-60 min after waking (CAR - Cortisol Awakening Response)
+  // Peak 2: ~5 hours after waking (midday)
+  // Peak 3: ~10.5 hours after waking (late afternoon)
+  // Baseline dips between peaks and drops to low at night
+
+  const t = minutesSinceWake;
+
+  // Composite of gaussian peaks
+  function gauss(x, mu, sigma, amp) {
+    return amp * Math.exp(-0.5 * Math.pow((x - mu) / sigma, 2));
+  }
+
+  // Base level that declines through the day
+  const base = Math.max(0.1, 0.35 - t / 1800);
+
+  // Peak 1: CAR, sharp peak ~45 min after waking
+  const p1 = gauss(t, 45, 30, 0.65);
+
+  // Peak 2: midday, ~300 min (5h) after waking
+  const p2 = gauss(t, 300, 50, 0.35);
+
+  // Peak 3: late afternoon, ~630 min (10.5h) after waking
+  const p3 = gauss(t, 630, 45, 0.3);
+
+  return Math.min(1, base + p1 + p2 + p3);
+}
+
+// Calculate
+function calculate() {
+  const wakeMin = getWakeMin();
+
+  // Calculate coffee windows (minutes since wake)
+  // Window 1: 90-150 min after waking (between CAR peak and midday peak)
+  const w1Start = 90;
+  const w1End = 150;
+
+  // Window 2: 330-390 min after waking (between midday peak and afternoon peak)
+  const w2Start = 330;
+  const w2End = 390;
+
+  // Caffeine cutoff
+  let cutoffMin = null;
+  let cutoffDisplay = null;
+  let bedMin = null;
+
+  if (bedtimeEnabled) {
+    bedMin = getBedMin();
+    // Cutoff = 8-10 hours before bedtime; we show the strict cutoff (10h before) and soft (8h)
+    let strictCutoff = bedMin - 600; // 10 hours
+    let softCutoff = bedMin - 480; // 8 hours
+    if (strictCutoff < 0) strictCutoff += 1440;
+    if (softCutoff < 0) softCutoff += 1440;
+    cutoffMin = { strict: strictCutoff, soft: softCutoff };
+  } else {
+    // Default: assume 16 hours awake, so bedtime ~ wake + 16h
+    bedMin = (wakeMin + 960) % 1440;
+    let strictCutoff = bedMin - 600;
+    let softCutoff = bedMin - 480;
+    if (strictCutoff < 0) strictCutoff += 1440;
+    if (softCutoff < 0) softCutoff += 1440;
+    cutoffMin = { strict: strictCutoff, soft: softCutoff };
+  }
+
+  // Convert windows to absolute times
+  const w1StartAbs = (wakeMin + w1Start) % 1440;
+  const w1EndAbs = (wakeMin + w1End) % 1440;
+  const w2StartAbs = (wakeMin + w2Start) % 1440;
+  const w2EndAbs = (wakeMin + w2End) % 1440;
+
+  // Check if window 2 is past caffeine cutoff
+  const w2PastCutoff = isTimePast(w2StartAbs, cutoffMin.soft, wakeMin);
+
+  // Build window cards
+  const container = document.getElementById('windowCards');
+  container.innerHTML = '';
+
+  // Card 1: Best window
+  const w1f = formatTimeFromMin(w1StartAbs);
+  const w1fe = formatTimeFromMin(w1EndAbs);
+  addWindowCard(container, {
+    cls: 'green',
+    icon: '\u2615',
+    timeStr: w1f.display + ' \u2013 ' + w1fe.display,
+    title: 'Best Coffee Window',
+    badge: 'Optimal',
+    desc: 'Cortisol dips after the morning awakening response. Caffeine is most effective now \u2014 you\'ll get a clean energy boost without fighting your body\'s natural alertness.'
+  });
+
+  // Card 2: Second window
+  if (!w2PastCutoff) {
+    const w2f = formatTimeFromMin(w2StartAbs);
+    const w2fe = formatTimeFromMin(w2EndAbs);
+    addWindowCard(container, {
+      cls: 'accent',
+      icon: '\u2615',
+      timeStr: w2f.display + ' \u2013 ' + w2fe.display,
+      title: 'Afternoon Coffee Window',
+      badge: 'Good',
+      desc: 'Your cortisol drops between the midday and late-afternoon peaks. A second cup here fights the post-lunch dip without affecting sleep.'
+    });
+  } else {
+    const w2f = formatTimeFromMin(w2StartAbs);
+    const w2fe = formatTimeFromMin(w2EndAbs);
+    addWindowCard(container, {
+      cls: 'warning',
+      icon: '\u26a0\ufe0f',
+      timeStr: w2f.display + ' \u2013 ' + w2fe.display,
+      title: 'Afternoon Window (Near Cutoff)',
+      badge: 'Caution',
+      desc: 'This window overlaps with or is close to your caffeine cutoff time. If you drink coffee now, it may affect your sleep. Consider decaf or a smaller serving.'
+    });
+  }
+
+  // Card 3: Avoid zone - first thing in morning
+  const avoidEnd = formatTimeFromMin((wakeMin + 90) % 1440);
+  const wakeF = formatTimeFromMin(wakeMin);
+  addWindowCard(container, {
+    cls: 'warning',
+    icon: '\u23f0',
+    timeStr: wakeF.display + ' \u2013 ' + avoidEnd.display,
+    title: 'Avoid Coffee (Cortisol Peak)',
+    badge: 'Wait',
+    desc: 'Your cortisol awakening response (CAR) peaks during this window. Coffee now is less effective and builds caffeine tolerance faster. Drink water instead.'
+  });
+
+  // Card 4: Cutoff
+  const cutoffF = formatTimeFromMin(cutoffMin.soft);
+  addWindowCard(container, {
+    cls: 'danger',
+    icon: '\ud83d\udeab',
+    timeStr: 'After ' + cutoffF.display,
+    title: 'Caffeine Cutoff',
+    badge: 'Stop',
+    desc: 'Caffeine consumed after this time will still be active at bedtime (half-life ~5 hours). Even if you can fall asleep, deep sleep quality will be significantly reduced.'
+  });
+
+  // Draw timeline
+  drawTimeline(wakeMin, w1Start, w1End, w2Start, w2End, cutoffMin, bedMin);
+
+  // Show results
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function addWindowCard(container, opts) {
+  const card = document.createElement('div');
+  card.className = 'window-card ' + opts.cls;
+  card.innerHTML = `
+    <div class="window-icon">${opts.icon}</div>
+    <div class="window-time">
+      <div class="time" style="font-size:${opts.timeStr.length > 20 ? '1.1rem' : '1.3rem'}">${opts.timeStr}</div>
+    </div>
+    <div class="window-info">
+      <div class="window-title">${opts.title}</div>
+      <div class="window-desc">${opts.desc}</div>
+      <span class="window-badge">${opts.badge}</span>
+    </div>
+  `;
+  container.appendChild(card);
+}
+
+// Check if time A is past time B in circular clock (relative to wake reference)
+function isTimePast(a, b, wakeRef) {
+  // Normalize both relative to wake
+  let aNorm = (a - wakeRef + 1440) % 1440;
+  let bNorm = (b - wakeRef + 1440) % 1440;
+  return aNorm >= bNorm;
+}
+
+// Draw cortisol timeline on canvas
+function drawTimeline(wakeMin, w1Start, w1End, w2Start, w2End, cutoffMin, bedMin) {
+  const canvas = document.getElementById('cortisolTimeline');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.parentElement.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  canvas.style.width = rect.width + 'px';
+  canvas.style.height = rect.height + 'px';
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const W = rect.width;
+  const H = rect.height;
+  const pad = { top: 30, right: 20, bottom: 40, left: 20 };
+  const gW = W - pad.left - pad.right;
+  const gH = H - pad.top - pad.bottom;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // We show 18 hours from wake time
+  const totalSpanMin = 18 * 60;
+
+  function xFromMinSinceWake(m) {
+    return pad.left + (m / totalSpanMin) * gW;
+  }
+
+  function yFromCortisol(level) {
+    return pad.top + gH - level * gH;
+  }
+
+  // Draw time labels
+  ctx.fillStyle = '#8a8aa0';
+  ctx.font = '11px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+
+  for (let i = 0; i <= 18; i += 2) {
+    const x = xFromMinSinceWake(i * 60);
+    const absMin = (wakeMin + i * 60) % 1440;
+    const ft = formatTimeFromMin(absMin);
+
+    // Grid line
+    ctx.strokeStyle = 'rgba(255,255,255,.06)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, pad.top);
+    ctx.lineTo(x, pad.top + gH);
+    ctx.stroke();
+
+    ctx.fillStyle = '#8a8aa0';
+    ctx.fillText(ft.display, x, pad.top + gH + 20);
+  }
+
+  // Draw zones FIRST (behind the curve)
+
+  // Window 1 - green zone
+  const w1x1 = xFromMinSinceWake(w1Start);
+  const w1x2 = xFromMinSinceWake(w1End);
+  ctx.fillStyle = 'rgba(0,184,148,.12)';
+  ctx.fillRect(w1x1, pad.top, w1x2 - w1x1, gH);
+
+  // Window 2 - accent/green zone
+  const w2x1 = xFromMinSinceWake(w2Start);
+  const w2x2 = xFromMinSinceWake(w2End);
+  ctx.fillStyle = 'rgba(0,206,201,.1)';
+  ctx.fillRect(w2x1, pad.top, w2x2 - w2x1, gH);
+
+  // Avoid zone - first 90 min
+  const avX = xFromMinSinceWake(0);
+  const avX2 = xFromMinSinceWake(90);
+  ctx.fillStyle = 'rgba(253,203,110,.07)';
+  ctx.fillRect(avX, pad.top, avX2 - avX, gH);
+
+  // Red zone (cutoff to end)
+  const cutoffMinSinceWake = (cutoffMin.soft - wakeMin + 1440) % 1440;
+  if (cutoffMinSinceWake <= totalSpanMin) {
+    const cx = xFromMinSinceWake(cutoffMinSinceWake);
+    ctx.fillStyle = 'rgba(225,112,85,.07)';
+    ctx.fillRect(cx, pad.top, pad.left + gW - cx, gH);
+  }
+
+  // Draw cortisol curve
+  ctx.beginPath();
+  ctx.strokeStyle = 'rgba(162,155,254,.8)';
+  ctx.lineWidth = 2.5;
+
+  const curvePoints = [];
+  for (let px = 0; px <= gW; px += 2) {
+    const minSinceWake = (px / gW) * totalSpanMin;
+    const level = cortisolLevel(minSinceWake);
+    const x = pad.left + px;
+    const y = yFromCortisol(level);
+    curvePoints.push({ x, y, level });
+    if (px === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+  }
+  ctx.stroke();
+
+  // Fill under curve
+  ctx.lineTo(pad.left + gW, pad.top + gH);
+  ctx.lineTo(pad.left, pad.top + gH);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(162,155,254,.06)';
+  ctx.fill();
+
+  // Zone labels
+  ctx.font = 'bold 10px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+
+  // Window 1 label
+  ctx.fillStyle = 'rgba(0,184,148,.8)';
+  ctx.fillText('BEST WINDOW', (w1x1 + w1x2) / 2, pad.top + 14);
+
+  // Window 2 label
+  ctx.fillStyle = 'rgba(0,206,201,.8)';
+  ctx.fillText('2ND WINDOW', (w2x1 + w2x2) / 2, pad.top + 14);
+
+  // Avoid label
+  ctx.fillStyle = 'rgba(253,203,110,.7)';
+  ctx.fillText('WAIT', (avX + avX2) / 2, pad.top + 14);
+
+  // Cutoff label
+  if (cutoffMinSinceWake <= totalSpanMin) {
+    const cx = xFromMinSinceWake(cutoffMinSinceWake);
+    ctx.fillStyle = 'rgba(225,112,85,.7)';
+    ctx.fillText('STOP CAFFEINE', Math.min(cx + 50, pad.left + gW - 40), pad.top + 14);
+
+    // Cutoff line
+    ctx.beginPath();
+    ctx.setLineDash([6, 4]);
+    ctx.strokeStyle = 'rgba(225,112,85,.5)';
+    ctx.lineWidth = 2;
+    ctx.moveTo(cx, pad.top);
+    ctx.lineTo(cx, pad.top + gH);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  // Bedtime marker
+  if (bedMin !== null) {
+    const bedMinSinceWake = (bedMin - wakeMin + 1440) % 1440;
+    if (bedMinSinceWake <= totalSpanMin) {
+      const bx = xFromMinSinceWake(bedMinSinceWake);
+      ctx.beginPath();
+      ctx.setLineDash([4, 4]);
+      ctx.strokeStyle = 'rgba(138,138,160,.4)';
+      ctx.lineWidth = 1.5;
+      ctx.moveTo(bx, pad.top);
+      ctx.lineTo(bx, pad.top + gH);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      ctx.fillStyle = 'rgba(138,138,160,.6)';
+      ctx.font = '10px -apple-system, sans-serif';
+      ctx.fillText('BEDTIME', bx, pad.top + gH + 34);
+    }
+  }
+
+  // Y-axis label
+  ctx.save();
+  ctx.translate(12, pad.top + gH / 2);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillStyle = '#555570';
+  ctx.font = '10px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Cortisol Level', 0, 0);
+  ctx.restore();
+
+  // Legend
+  const legendY = pad.top + gH + 28;
+  ctx.font = '10px -apple-system, sans-serif';
+  ctx.textAlign = 'left';
+
+  // Cortisol curve legend
+  ctx.strokeStyle = 'rgba(162,155,254,.8)';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(pad.left, legendY);
+  ctx.lineTo(pad.left + 16, legendY);
+  ctx.stroke();
+  ctx.fillStyle = '#8a8aa0';
+  ctx.fillText('Cortisol', pad.left + 20, legendY + 4);
+}
+
+// Input validation
+document.getElementById('inputHour').addEventListener('input', function() {
+  let v = parseInt(this.value);
+  const max = timeFormat === '24h' ? 23 : 12;
+  const min = timeFormat === '24h' ? 0 : 1;
+  if (v > max) this.value = max;
+  if (v < min && this.value.length > 0) this.value = min;
+});
+document.getElementById('inputMin').addEventListener('input', function() {
+  let v = parseInt(this.value);
+  if (v > 59) this.value = 59;
+  if (v < 0) this.value = 0;
+});
+document.getElementById('inputMin').addEventListener('blur', function() {
+  this.value = String(parseInt(this.value) || 0).padStart(2, '0');
+});
+document.getElementById('bedHour').addEventListener('input', function() {
+  let v = parseInt(this.value);
+  const max = timeFormat === '24h' ? 23 : 12;
+  const min = timeFormat === '24h' ? 0 : 1;
+  if (v > max) this.value = max;
+  if (v < min && this.value.length > 0) this.value = min;
+});
+document.getElementById('bedMin').addEventListener('input', function() {
+  let v = parseInt(this.value);
+  if (v > 59) this.value = 59;
+  if (v < 0) this.value = 0;
+});
+document.getElementById('bedMin').addEventListener('blur', function() {
+  this.value = String(parseInt(this.value) || 0).padStart(2, '0');
+});
+
+// Enter key support
+document.querySelectorAll('.time-input, .bedtime-time').forEach(input => {
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') calculate();
+  });
+});
+
+// Resize handler
+window.addEventListener('resize', () => {
+  if (document.getElementById('results').style.display === 'block') {
+    // Redraw timeline only
+    const wakeMin = getWakeMin();
+    const bedMin = bedtimeEnabled ? getBedMin() : (wakeMin + 960) % 1440;
+    let cutoffMin;
+    let strictCutoff = bedMin - 600;
+    let softCutoff = bedMin - 480;
+    if (strictCutoff < 0) strictCutoff += 1440;
+    if (softCutoff < 0) softCutoff += 1440;
+    cutoffMin = { strict: strictCutoff, soft: softCutoff };
+    drawTimeline(wakeMin, 90, 150, 330, 390, cutoffMin, bedMin);
+  }
+});
+
+// Init time format from localStorage
+if (timeFormat === '24h') setTimeFormat('24h');
+
+function sendFeedback(vote, btn) {
+  document.querySelectorAll('.feedback-btn').forEach(b => b.classList.add('voted'));
+  document.getElementById('feedbackBar').style.display = 'none';
+  document.getElementById('feedbackThanks').style.display = 'block';
+  if (window.plausible) plausible('Feedback', {props: {vote: vote, page: 'coffee-timing-calculator'}});
+}
+</script>
+
+</body>
+</html>

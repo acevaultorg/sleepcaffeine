@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — Sleep Caffeine</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0e1a;--card:#121829;--card-border:#1e2a45;
+  --primary:#6c5ce7;--primary-light:#a29bfe;--accent:#00cec9;
+  --text:#e8e8f0;--text-dim:#8a8aa0;--text-muted:#555570;
+}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);color:var(--text);min-height:100vh;
+  display:flex;align-items:center;justify-content:center;padding:40px 20px;line-height:1.6;
+}
+.wrap{max-width:640px;text-align:center;}
+.code{
+  font-size:clamp(4rem,14vw,7rem);font-weight:800;line-height:1;
+  background:linear-gradient(135deg,#fff 0%,var(--primary-light) 50%,var(--accent) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  letter-spacing:-.03em;margin-bottom:12px;
+}
+h1{font-size:clamp(1.3rem,3.5vw,1.8rem);font-weight:800;margin-bottom:12px;}
+p{color:var(--text-dim);margin-bottom:28px;font-size:1rem;}
+.links{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;text-align:left;
+}
+.links a{
+  background:var(--card);border:1px solid var(--card-border);border-radius:12px;
+  padding:18px 20px;text-decoration:none;color:var(--text);
+  transition:all .2s;
+}
+.links a:hover{border-color:var(--primary);transform:translateY(-2px);}
+.links strong{display:block;color:var(--primary-light);font-size:.95rem;margin-bottom:4px;}
+.links span{font-size:.82rem;color:var(--text-dim);}
+.home{
+  display:inline-block;margin-top:28px;color:var(--primary-light);
+  font-weight:700;text-decoration:none;font-size:.9rem;
+}
+.home:hover{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="code">404</div>
+  <h1>This page slept in.</h1>
+  <p>The page you're looking for doesn't exist — but these do:</p>
+  <div class="links">
+    <a href="/sleep-calculator/"><strong>🌙 Sleep Calculator</strong><span>Find your perfect bedtime</span></a>
+    <a href="/coffee-timing-calculator/"><strong>☕ Coffee Timing</strong><span>Best time for your first cup</span></a>
+    <a href="/caffeine-half-life-calculator/"><strong>⚡ Caffeine Half-Life</strong><span>Track caffeine in your body</span></a>
+    <a href="/nap-calculator/"><strong>😴 Nap Calculator</strong><span>Power naps done right</span></a>
+  </div>
+  <a href="/" class="home">← Back to Sleep Caffeine</a>
+</div>
+</body>
+</html>
