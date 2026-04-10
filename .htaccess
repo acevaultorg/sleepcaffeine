@@ -13,6 +13,7 @@ RewriteRule ^sleep-calculator/?$ sleep-calculator.html [L]
 RewriteRule ^coffee-timing-calculator/?$ coffee-timing-calculator.html [L]
 RewriteRule ^caffeine-half-life-calculator/?$ caffeine-half-life-calculator.html [L]
 RewriteRule ^nap-calculator/?$ nap-calculator.html [L]
+RewriteRule ^products/?$ products.html [L]
 
 # 404 fallback
 ErrorDocument 404 /404.html
