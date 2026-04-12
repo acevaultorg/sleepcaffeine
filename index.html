@@ -157,6 +157,18 @@ a{color:var(--primary-light);}
 .faq-item.open .faq-a{max-height:500px;}
 .faq-a-inner{padding:0 24px 20px;color:var(--text-dim);font-size:.95rem;line-height:1.7;}
 
+.affiliate-section{max-width:1000px;margin:0 auto 40px;padding:0 20px;}
+.affiliate-section h2{font-size:1.3rem;font-weight:700;margin-bottom:6px;text-align:center;}
+.affiliate-subtext{text-align:center;color:var(--text-dim);font-size:.87rem;margin-bottom:20px;}
+.affiliate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+.affiliate-card{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:20px;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:8px;transition:border-color .2s,transform .2s;}
+.affiliate-card:hover{border-color:var(--primary);transform:translateY(-2px);}
+.affiliate-emoji{font-size:1.8rem;}
+.affiliate-name{font-size:.95rem;font-weight:700;color:var(--primary-light);}
+.affiliate-desc{font-size:.82rem;color:var(--text-dim);line-height:1.5;flex:1;}
+.affiliate-cta{font-size:.82rem;font-weight:700;color:var(--accent);margin-top:4px;}
+.affiliate-disclosure{text-align:center;font-size:.72rem;color:var(--text-muted);margin-top:14px;}
+
 .footer{
   text-align:center;padding:40px 20px;color:var(--text-muted);font-size:.85rem;
   border-top:1px solid var(--card-border);margin-top:60px;
@@ -295,6 +307,51 @@ a{color:var(--primary-light);}
     </div>
   </div>
 
+</div>
+
+<!-- Amazon Associates — top picks matching both sleep and caffeine audiences -->
+<div class="affiliate-section">
+  <h2>Editor picks for sleep &amp; coffee</h2>
+  <p class="affiliate-subtext">Highly-rated gear that pairs well with the calculators above.</p>
+  <div class="affiliate-grid">
+    <a href="https://www.amazon.com/s?k=manta+sleep+mask&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">😴</span>
+      <span class="affiliate-name">Sleep Mask</span>
+      <span class="affiliate-desc">Total blackout for deeper sleep cycles. Adjustable eye cups, zero pressure on eyelids.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+    <a href="https://www.amazon.com/s?k=white+noise+machine+sleep&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">🎵</span>
+      <span class="affiliate-name">White Noise Machine</span>
+      <span class="affiliate-desc">Mask disruptive sounds and fall asleep faster. Consistent noise floor protects sleep cycles.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+    <a href="https://www.amazon.com/s?k=melatonin+sleep+supplement&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">🌙</span>
+      <span class="affiliate-name">Melatonin (0.5mg)</span>
+      <span class="affiliate-desc">Low-dose melatonin shown to reduce sleep onset time without grogginess the next morning.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+    <a href="https://www.amazon.com/s?k=pour+over+coffee+set+hario&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">🫗</span>
+      <span class="affiliate-name">Pour-Over Set</span>
+      <span class="affiliate-desc">Brew precisely — control dose and strength to stay inside your optimal caffeine window.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+    <a href="https://www.amazon.com/s?k=manual+burr+coffee+grinder&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">⚙️</span>
+      <span class="affiliate-name">Burr Grinder</span>
+      <span class="affiliate-desc">Consistent grind size = consistent caffeine extraction. Know exactly what you're drinking.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+    <a href="https://www.amazon.com/s?k=sleep+tracker+ring+oura&tag=sleepcaff-20" class="affiliate-card" target="_blank" rel="noopener nofollow sponsored">
+      <span class="affiliate-emoji">💍</span>
+      <span class="affiliate-name">Sleep Tracker Ring</span>
+      <span class="affiliate-desc">Measure actual sleep cycles, REM, and deep sleep. See if the calculator times match your body.</span>
+      <span class="affiliate-cta">Shop on Amazon →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">As an Amazon Associate we earn from qualifying purchases. Prices and availability subject to change.</p>
 </div>
 
 <div class="footer">
